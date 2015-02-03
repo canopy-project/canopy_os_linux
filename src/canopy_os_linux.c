@@ -23,11 +23,6 @@
 #include <stdlib.h>
 
 
-void canopy_os_assert(int condition) {
-    assert(condition);
-}
-
-
 void * canopy_os_alloc(size_t size) {
     return malloc(size);
 }
