@@ -46,3 +46,8 @@ void canopy_os_log(const char *format, ...) {
     vfprintf(stderr, format, ap);
     va_end(ap);
 }
+
+char * canopy_os_strdup(const char *src) {
+    return strdup(src);
+}
+
