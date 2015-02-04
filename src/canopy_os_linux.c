@@ -35,6 +35,11 @@ void canopy_os_free(void *ptr) {
     free(ptr);
 }
 
+int canopy_os_vsnprintf(char *buf, size_t len, const char *msg, va_list ap)
+{
+    return vsnprintf(buf, len, msg, ap);
+}
+
 void canopy_os_log(const char *format, ...) {
     va_list ap;
     va_start(ap, format);
